@@ -10,7 +10,8 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
         <div className="flex justify-between items-center h-16">
           <a href="#home" className="font-mono text-xl font-bold text-white">
             {" "}
-            Yenni<span className="text-[#D7B0FF] drop-shadow-[0_0_6px_rgba(215,176,255,0.6)]">
+            Yenni<span className="bg-gradient-to-r from-[#5315C0] to-[#C084FC]
+                 bg-clip-text text-transparent">
              | Software & Data
             </span> {" "}
           </a>
