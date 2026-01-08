@@ -1,9 +1,12 @@
+
+
 export const Home = () => {
   return (
     <section
       id="home"
       className="min-h-screen flex items-center justify-center relative"
     >
+
       <div className="text-center z-10 px-4">
         {/* Headline */}
         <h1
@@ -46,6 +49,7 @@ Agile frameworks, product-oriented roles, and data-driven decision-making.
           </a>
         </div>
       </div>
+      
     </section>
   );
 };
