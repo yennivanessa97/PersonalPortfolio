@@ -1,3 +1,5 @@
+import { RevealOnScroll } from "./RevealOnScroll";
+
 export const About = () => {
   const frontendSkills = [
     "React",
@@ -9,11 +11,19 @@ export const About = () => {
 
   const backendSkills = ["Node.js", "Python", "AWS", "MongoDB", "GraphQL"];
 
+  const systemsSkills = [
+  "Ubuntu (Server & Client)",
+  "VirtualBox",
+  "Linux System Configuration",
+  "Basic Network Setup",
+];
+
   return (
     <section
       id="about"
       className="min-h-screen flex items-center justify-center py-20"
     >
+      <RevealOnScroll>
       <div className="max-w-4xl mx-auto px-4">
         {/* Title */}
         <h2
@@ -37,7 +47,7 @@ export const About = () => {
           </p>
 
           {/* Skills */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Frontend */}
             <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
               <h3 className="text-xl font-bold mb-4 text-white">
@@ -79,8 +89,32 @@ export const About = () => {
                 ))}
               </div>
             </div>
+            {/* Systems & Virtualization */}
+<div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+  <h3 className="text-xl font-bold mb-4 text-white">
+    Systems & Virtualization
+  </h3>
+  <div className="flex flex-wrap gap-2">
+    {systemsSkills.map((skill, key) => (
+      <span
+        key={key}
+        className="bg-[#5315C0]/15 text-[#C084FC]
+                   py-1 px-3 rounded-full text-sm
+                   hover:bg-[#5315C0]/30
+                   hover:shadow-[0_0_12px_rgba(192,132,252,0.35)]
+                   transition"
+      >
+        {skill}
+      </span>
+    ))}
+  </div>
+</div>
+
+            
           </div>
         </div>
+
+        
 
         {/* Bottom cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
@@ -123,6 +157,7 @@ export const About = () => {
           </div>
         </div>
       </div>
+      </RevealOnScroll>
     </section>
   );
 };
