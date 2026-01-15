@@ -138,22 +138,48 @@ export const Projects = () => {
             </div>
           </div>
 
-          {/* ===================== */}
-          {/* Placeholder Course 1 */}
-          {/* ===================== */}
-          <div
-            className="p-8 rounded-xl border border-white/10
-                       bg-white/5 backdrop-blur
-                       opacity-70"
-          >
-            <h3 className="text-2xl font-bold text-white mb-2">
-              Networking Fundamentals
-            </h3>
-            <p className="text-gray-400">
-              Upcoming academic projects related to network configuration,
-              protocols, and troubleshooting.
-            </p>
-          </div>
+{/* Blog / Learning Project Card */}
+<a
+  href="/blog/administration-entrepreneurship"
+  className="block group"
+>
+  <div
+    className="p-6 rounded-xl border border-white/10
+               bg-white/5 backdrop-blur
+               hover:-translate-y-1
+               hover:border-[#C084FC]/40
+               hover:shadow-[0_0_25px_rgba(192,132,252,0.2)]
+               transition-all"
+  >
+    {/* Badge */}
+    <span
+      className="inline-block mb-3 px-3 py-1 text-xs font-medium
+                 rounded-full bg-[#C084FC]/10 text-[#E9D5FF]"
+    >
+      Learning Blog
+    </span>
+
+    {/* Title */}
+    <h3 className="text-2xl font-bold mb-2 text-white">
+      Administration & Entrepreneurship
+    </h3>
+
+    {/* Description */}
+    <p className="text-gray-400 text-sm mb-4">
+      A structured learning blog where I organize course notes and connect
+      administrative and entrepreneurial concepts with real-world and
+      product-oriented thinking.
+    </p>
+
+    {/* CTA */}
+    <span
+      className="text-[#C084FC] font-medium
+                 group-hover:text-[#E9D5FF]"
+    >
+      Read blog →
+    </span>
+  </div>
+</a>
 
           {/* ===================== */}
           {/* Placeholder Course 2 */}
