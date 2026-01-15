@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 export const LoadingScreen = ({ onComplete }) => {
   const [text, setText] = useState("");
-  const fullText = "<Human-Centered Code/>";
+  const fullText = "Human Centered Systems";
 
   useEffect(() => {
     let index = 0;
@@ -28,6 +28,7 @@ export const LoadingScreen = ({ onComplete }) => {
           {text}
           <span className="animate-blink ml-1">|</span>
         </div>
+       
 
         {/* Loading line aligned to text width */}
         <div className="h-[2px] w-full bg-gray-800 rounded relative overflow-hidden">

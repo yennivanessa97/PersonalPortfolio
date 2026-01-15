@@ -40,10 +40,7 @@ export const About = () => {
                         bg-white/5 backdrop-blur
                         hover:-translate-y-1 transition-all">
           <p className="text-gray-300 mb-8 text-center max-w-2xl mx-auto">
-            Software and Data Engineering student with a strong interest in
-            Agile environments, product-oriented thinking, and data-driven
-            decision-making. My background in psychology strengthens my ability
-            to collaborate, analyze problems, and support effective team work.
+           I am currently building a strong foundation in operating systems, virtualization, and technical support through academic projects and hands-on practice. I enjoy solving technical issues, documenting processes, and supporting users in structured environments while continuing to grow toward Agile and team-oriented roles.
           </p>
 
           {/* Skills */}

@@ -20,9 +20,7 @@ export const Home = () => {
 
         {/* Subtitle */}
         <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
-        Software and Data Engineering student with a psychology background, focused on
-Agile frameworks, product-oriented roles, and data-driven decision-making.
-
+        Software and Data Engineering student with a psychology background, combining IT support skills with user-centered and process-oriented thinking.
         </p>
 
         {/* Buttons */}
