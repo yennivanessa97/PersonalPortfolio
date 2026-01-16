@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas de Administración</title>
+    <style>
+        @page {
+            margin: 2cm;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        
+        h1 {
+            color: #1a1a1a;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 10px;
+            margin-top: 30px;
+            font-size: 24px;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            margin-top: 25px;
+            font-size: 20px;
+            border-left: 4px solid #3498db;
+            padding-left: 10px;
+        }
+        
+        h3 {
+            color: #34495e;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        
+        .semana {
+            background: #ecf0f1;
+            padding: 8px 15px;
+            margin: 25px 0 15px 0;
+            border-radius: 5px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .contenido {
+            margin-left: 20px;
+        }
+        
+        .tabla-comparacion {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        
+        .tabla-comparacion th,
+        .tabla-comparacion td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        .tabla-comparacion th {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        .tabla-comparacion tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .definicion {
+            background: #fff9e6;
+            padding: 15px;
+            border-left: 4px solid #f39c12;
+            margin: 15px 0;
+        }
+        
+        .nota {
+            background: #e8f4f8;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin: 15px 0;
+            font-style: italic;
+        }
+        
+        .formula {
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            margin: 10px 0;
+        }
+        
+        ul, ol {
+            margin: 10px 0;
+        }
+        
+        li {
+            margin: 8px 0;
+        }
+        
+        .escuela {
+            page-break-inside: avoid;
+            margin: 20px 0;
+        }
+        
+        @media print {
+            body {
+                padding: 0;
+            }
+            
+            .semana {
+                page-break-after: avoid;
+            }
+            
+            h1, h2, h3 {
+                page-break-after: avoid;
+            }
+        }
+        .notes-wrapper {
+    max-width: 210mm;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    position: relative;
+}
+
+.notes-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 16px;
+    margin: -20px -20px 20px -20px;
+
+    background: rgba(10, 10, 10, 0.9);
+    backdrop-filter: blur(8px);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.back-link {
+    font-size: 14px;
+    color: #c084fc;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.back-link:hover {
+    color: #e9d5ff;
+}
+
+.header-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffffcc;
+}
+
+     
+
+    </style>
+</head>
+
+<div class="notes-wrapper">
+
+     <div class="notes-header">
+    <a href="/#projects" class="back-link">← Back to Portfolio</a>
+    <span class="header-title">Administration Notes</span>
+  </div>
+
+<body>
+
+
+    <h1 style="text-align: center; border: none; font-size: 28px;">NOTAS DE ADMINISTRACIÓN</h1>
+    
+    <div class="semana">SEMANA 1 - CLASE SINCRÓNICA</div>
+    
+    <h2>Administración vs Gerencia</h2>
+    
+    <table class="tabla-comparacion">
+        <tr>
+            <th>Administración</th>
+            <th>Gerencia</th>
+        </tr>
+        <tr>
+            <td>Planear y Organizar</td>
+            <td>Ejecución y dirección de personas</td>
+        </tr>
+        <tr>
+            <td>Objetivos, metas, misión, visión</td>
+            <td>Toma de decisiones y liderazgo</td>
+        </tr>
+        <tr>
+            <td>Dirección de la estrategia</td>
+            <td>Ejecutar lo planteado en la administración</td>
+        </tr>
+        <tr>
+            <td>Delegar cada tarea a la persona indicada</td>
+            <td>Personas responsables del equipo, su liderazgo y recursos</td>
+        </tr>
+    </table>
+    
+    <div class="definicion">
+        <h3>Definición de Administración</h3>
+        <p><strong>Del latín:</strong></p>
+        <ul>
+            <li><strong>Ad:</strong> Dirección, tendencia, norte</li>
+            <li><strong>Minister:</strong> Subordinación u obediencia</li>
+        </ul>
+        <p><strong>Entonces administración significa:</strong> cumplimiento de una función bajo el mando de otro, es decir, prestación de un servicio a otro.</p>
+    </div>
+    
+    <h2>Cargos según Tamaño del Negocio</h2>
+    
+    <div class="contenido">
+        <h3>Negocio pequeño: Cafetería</h3>
+        <ul>
+            <li><strong>Dueño/a:</strong> Dueño del negocio</li>
+            <li><strong>Administrador:</strong> Es nombrado por el dueño para dirigir la empresa. Cuando se habla de administrador la complejidad no es tan alta, es más sencilla.</li>
+        </ul>
+        
+        <h3>Negocio mediano: Empresa de venta de camisas</h3>
+        <ul>
+            <li><strong>Gerente:</strong> El gerente también dirige la empresa, pero hace referencia a una empresa que tiene una complejidad más alta.</li>
+        </ul>
+        
+        <h3>Negocio Grande: Banco</h3>
+        <ul>
+            <li><strong>Presidente:</strong> El presidente también dirige la empresa, pero hace referencia a una empresa que tiene una complejidad más alta.</li>
+        </ul>
+        
+        <h3>Multinacional</h3>
+        <ul>
+            <li><strong>C.E.O. (Chief Executive Officer):</strong> También dirige la compañía, pero la complejidad de la compañía es más grande.</li>
+        </ul>
+        
+        <div class="nota">
+            <p><strong>En la estructura norteamericana:</strong> Se diferencia el presidente del C.E.O en que el presidente es el número 1 de la junta y el C.E.O es el número 1 de la compañía.</p>
+        </div>
+        
+        <h3>En Colombia</h3>
+        <p>En asociaciones o en gremios se encuentra también el cargo de director, director general, director ejecutivo.</p>
+    </div>
+    
+    <div class="semana">SEMANA 2 - ENCUENTRO TRIPLE AAA</div>
+    
+    <h2>Áreas de enfoque para un Ingeniero de Software como gerente</h2>
+    
+    <p>Un directivo integral debería enfocarse en 3 aspectos:</p>
+    
+    <ol>
+        <li><strong>Gestión por procesos:</strong> Implica que la empresa sea oportuna (Estructura)</li>
+        <li><strong>Gestión Estratégica:</strong> Saber para donde se va, cuál es la misión, la visión, el plan (estrategia)</li>
+        <li><strong>Gestión del cambio:</strong> Generación de un plan de negocio, aquí se encuentran las personas (cultura)</li>
+    </ol>
+    
+    <h2>3 Grandes Objetivos Comunes de las Empresas</h2>
+    
+    <h3>1. Supervivencia</h3>
+    <div class="contenido">
+        <p>Debe garantizar que la empresa no se acabe.</p>
+        <p>Los objetivos de supervivencia aparecen en 2 momentos:</p>
+        <ul>
+            <li>Cuando la empresa nace y buscan que la empresa crezca y permanezca</li>
+            <li>Cuando aparece una crisis</li>
+        </ul>
+        <p><strong>Outplacement:</strong> Modelos de desvinculación exitosos, en donde se prepara a los empleados para despedirlos.</p>
+    </div>
+    
+    <h3>2. Rendimientos</h3>
+    <div class="contenido">
+        <p>Cuando la empresa está funcionando aparecen los objetivos de rendimiento.</p>
+        <ul>
+            <li><strong>Utilidad:</strong> La utilidad es un valor nominal, si es positiva se llama ganancia, si es negativa se llama pérdida.</li>
+            <li><strong>Rendimientos:</strong> Es un valor relativo, es decir, que se expresa en términos de %.</li>
+        </ul>
+    </div>
+    
+    <div class="semana">SEMANA 2 - ENCUENTRO SINCRÓNICO</div>
+    
+    <h2>El Dueño</h2>
+    
+    <div class="nota">
+        <p>El dueño no se puede homologar a un cargo. Se le puede quitar poder de decisión, despedirlo de su cargo si no es accionista mayoritario, pero no se puede despedir como dueño.</p>
+        <p><strong>Nota importante:</strong> En Colombia, una de las causas por las que más empresas colapsan es porque no saben distinguir los recursos del dueño de los recursos de la empresa.</p>
+    </div>
+    
+    <h2>Conceptos Relacionados</h2>
+    
+    <h3>Estrategia Contingencial</h3>
+    <p>Buscan una oportunidad de mercado para sobrevivir, pero no es de largo plazo.</p>
+    
+    <h3>Holding</h3>
+    <p>Busca montar un negocio al rededor de un capital, ya que se invierte para producir ganancias.</p>
+    
+    <h3>Emprendimiento</h3>
+    <p><strong>Peter Schumpeter:</strong> Intraemprendimiento producto de la innovación. En Colombia inició con el EBT (emprendimiento de base tecnológica), luego ya se acuñó a todos los negocios, incluso tradicionales.</p>
+    
+    <h3>ESAL (Empresa sin ánimo de lucro)</h3>
+    <p>Como una fundación. En este modelo no hay dueños sino fundadores.</p>
+    
+    <h3>Sector Solidario</h3>
+    <p>Cooperativas y fondos de empleados. En este modelo, todos los asociados son dueños.</p>
+    
+    <h2>Representantes Legales</h2>
+    <p>Puede ser 1 persona o múltiples personas que hablan en nombre de la empresa.</p>
+    
+    <h3>Registros Necesarios</h3>
+    <p>Una empresa requiere para su funcionamiento dependiendo la empresa y lo que requiera:</p>
+    
+    <ol>
+        <li><strong>RUT (Registro Único Tributario):</strong> Cual es la razón Social (obligatorio para todas las empresas)</li>
+        <li><strong>RUP (Registro Único de Proponentes):</strong> Se requiere cuando se va a vender algo al estado</li>
+        <li><strong>RUB (Registro de últimos beneficiarios):</strong> Los últimos beneficiarios son aquellos que tienen por lo menos el 5% de la empresa y se utiliza para identificar a los últimos beneficiarios de la compañía</li>
+    </ol>
+    
+    <h2>Orientaciones Hacia el Entorno</h2>
+    <p>Son aquellos momentos en el que maneja un negocio, siente que tiene unos patrones. Son 3 estas orientaciones:</p>
+    <ol>
+        <li>Orientación al cliente</li>
+        <li>Comportamientos Monopsonios</li>
+        <li>Keiretzu</li>
+    </ol>
+    
+    <div class="semana">SEMANA 3 - ENCUENTRO SINCRÓNICO</div>
+    
+    <h2>Orientaciones hacia el entorno (Detalle)</h2>
+    
+    <p>Se refieren a 3 enfoques que parece que cuando eres dueño estas entidades dan órdenes.</p>
+    
+    <h3>1. Orientación al cliente</h3>
+    <div class="contenido">
+        <p>El enfoque de estas organizaciones es entender lo que quiere el cliente, surgen conceptos como la coproducción y el codiseño de productos y servicios en donde el cliente participa activamente. Genera un arraigo de marca.</p>
+        <ul>
+            <li><strong>Top of mind:</strong> Es la primera marca que la persona recuerda</li>
+            <li><strong>Top of heart:</strong> Es la marca que la persona prefiere</li>
+        </ul>
+        <p><strong>Ejemplos:</strong> Negocios de tecnología, porque el cliente pone los requerimientos y se hace el producto a la medida. En este caso el cliente se comporta como si fuera un patrón.</p>
+        
+        <div class="nota">
+            <p><strong>Nota relacionada:</strong> Existe también un tipo de oferta que es la oferta en masa con demanda segmentada como en un bufet y en servicios como la universidad que tiene materias electivas. Esto permite la eficiencia, es decir, que se reducen los costos.</p>
+        </div>
+    </div>
+    
+    <h3>2. Comportamientos Monopsónicos</h3>
+    <div class="contenido">
+        <p><strong>Monopolio:</strong> Es una estructura de mercado, y se configura cuando una compañía asume una posición dominante y tiene una posición en donde es el único oferente.</p>
+        <p><strong>Monopsonio:</strong> Es en donde solo hay un único comprador. Ejemplo: Indumil, son el único comprador que legalmente puede tener el mercado de armas Colombiano.</p>
+        <p>Los comportamientos monopsonicos se dan cuando el cliente se comporta como patrón y me compra la totalidad de lo que produce.</p>
+    </div>
+    
+    <h3>3. Keiretzu</h3>
+    <div class="contenido">
+        <p>Tiene 2 orígenes:</p>
+        <ul>
+            <li><strong>Origen oriental:</strong> Donde nace, se entiende como un holding (grupo empresarial) que no está vinculado a la propiedad accionaria</li>
+            <li><strong>En occidente:</strong> Se conoce como administración más allá de los términos legales. Como la RSE (responsabilidad social empresarial)</li>
+        </ul>
+    </div>
+    
+    <div class="semana">SEMANA 4 - ENCUENTRO AAA</div>
+    
+    <h2>Rendimientos</h2>
+    
+    <p>Para hablar de rendimientos se deben tener en cuenta los siguientes criterios:</p>
+    
+    <h3>¿Cuál es la diferencia entre la rentabilidad y la utilidad?</h3>
+    
+    <h3>1. Utilidad</h3>
+    <div class="contenido">
+        <p>La utilidad se da en forma nominal, es un número real y son fruto del resultado de la división entre los ingresos y los egresos y esta puede ser negativa o positiva, cuando es positiva es ganancia, cuando es negativa es perdida. En una cooperativa no es ganancia ni perdida, sino excedente.</p>
+        <div class="formula">
+            1.000 / 600 = 400 (utilidad)
+        </div>
+    </div>
+    
+    <h3>2. Rentabilidad - Margen</h3>
+    <div class="contenido">
+        <p>Es un valor relativo, se mide en términos de %, son indicadores y evalúan la eficiencia o desempeño de los recursos.</p>
+        
+        <div class="formula">
+            <p><strong>FÓRMULA DE LA RENTABILIDAD:</strong></p>
+            <p>Utilidades / inversión (si no se tiene un número de inversión, se puede usar los egresos) y ese valor multiplicarlo * 100 (indicador de los inversionistas)</p>
+            <p>En el caso de la rentabilidad, lo que se busca es tener RSPS (Rendimientos superiores al promedio del sector).</p>
+        </div>
+        
+        <div class="formula">
+            <p><strong>FÓRMULA DEL MARGEN:</strong></p>
+            <p>Utilidades / Ingresos (indicador de los managers)</p>
+        </div>
+    </div>
+    
+    <div class="semana">SEMANA 4 - ENCUENTRO SINCRÓNICO</div>
+    
+    <h2>Proceso Administrativo</h2>
+    
+    <p>La administración en la actualidad se definen bajo 4 parámetros: <strong>Planear, organizar, dirigir y controlar un proceso</strong>, que se conoce como PROCESO ADMINISTRATIVO.</p>
+    
+    <p>La evolución se dio de 8 grandes escuelas de pensamiento.</p>
+    
+    <div class="escuela">
+        <h2>1. ESCUELA CIENTÍFICA</h2>
+        <p><strong>Época:</strong> Principios del siglo XX</p>
+        <p><strong>Representante:</strong> Frederick W. Taylor - Ingeniero Mecánico y Economista estadounidense</p>
+        
+        <p>Este Ingeniero empezó desde obrero y fue haciendo carrera, sus postulados no fueron tan acogidos por las empresas en donde trabajaba, pero sí los utilizó Henry Ford en el modelo conocido como Modelo T. Estos planteamientos indicaban que el obrero debía realizar tareas muy sencillas, pero muy repetitivas, esto dio el tránsito de personas que eran artesanas a ser operarias.</p>
+        
+        <h3>Principios de la escuela científica:</h3>
+        <ol>
+            <li>Desarrollo de una ciencia del trabajo: que el trabajo se mejora, se interviene y se organiza de forma específica</li>
+            <li>Selección científica del trabajador</li>
+            <li>Colaboración cordial entre patronos y trabajadores</li>
+            <li>División "casi por igual" del trabajo y la responsabilidad entre la dirección y los trabajadores</li>
+        </ol>
+    </div>
+    
+    <div class="escuela">
+        <h2>2. ESCUELA CLÁSICA</h2>
+        <p><strong>Época:</strong> Principios del siglo XX</p>
+        <p><strong>Representante:</strong> Henri Fayol - Ingeniero de Minas Francés</p>
+        
+        <p>Fue hijo de empresarios y veía los problemas desde la parte más alta y habla de la división del trabajo desde la estructura de la empresa y fue el creador del organigrama. Sus planteamientos provienen de un escrito bíblico en el que Dios le indica a David que la forma en que debe gobernar es que tome a 10 hombre y a cada uno le dice que maneja a otros 10 hombres y de esos otros 10 hombres tome a uno para que maneje otros 10 hombres etc.</p>
+        
+        <div class="nota">
+            <p>En Colombia aparece por primera vez los conceptos de administración a finales de la década de los 40. Y entra por la facultad de minas de la Universidad Nacional de Colombia.</p>
+        </div>
+        
+        <h3>Principios de esta escuela:</h3>
+        <ol>
+            <li><strong>División del trabajo (organigrama):</strong> Una empresa debería tener un directivo principal y 5 grandes estructuras (producción, relaciones industriales, seguridad, tesorería, contabilidad)</li>
+            <li><strong>Autoridad y responsabilidad:</strong> La responsabilidad no es delegable, solo la autoridad, ya que responde el número 1 del área</li>
+            <li>Disciplina</li>
+            <li><strong>Unidad de mando:</strong> A cada persona le debe corresponder 1 solo jefe</li>
+            <li><strong>Unidad de dirección:</strong> Cada empresa debe empezar por un solo jefe último en el que recae la última oportunidad, generalmente no siempre corresponde a los dueños sino a los representantes legales</li>
+            <li>Subordinación del interés individual al general</li>
+            <li>Remuneración justa al personal</li>
+            <li><strong>Centralización vs. descentralización:</strong> Las empresas centralizadas son aquellas en donde las decisiones las toma una sola persona o pocas personas, esto se da por el deseo de controlar todo. Las empresas descentralizadas generan rangos y políticas para que más personas tomen decisiones</li>
+            <li>Jerarquía</li>
+            <li>Orden</li>
+            <li>Equidad: equidad en la estructura</li>
+            <li>Estabilidad del personal</li>
+            <li><strong>Iniciativa:</strong> Empowerment. Facultamiento</li>
+            <li>Espíritu de grupo</li>
+        </ol>
+    </div>
+    
+    <div class="escuela">
+        <h2>3. ESCUELA DE LAS RELACIONES HUMANAS</h2>
+        <p><strong>Época:</strong> Década de 1930</p>
+        <p><strong>Representantes:</strong> George Elton Mayo (Sociólogo Austriaco) - Chris Argyriz</p>
+        
+        <p>La investigación se enfoca en analizar como impacta el ambiente laboral en el desempeño del empleado.</p>
+        <p>Se enfoca en el concepto de <strong>Motivación</strong>, pero tiene varias críticas porque esa motivación con beneficios no se mantenía en el tiempo.</p>
+    </div>
+    
+    <div class="escuela">
+        <h2>4. ESCUELA BUROCRÁTICA</h2>
+        <p><strong>Época:</strong> Década de 1940</p>
+        <p><strong>Representante:</strong> Maximilian Weber (Político, Economista y Sociólogo Alemán)</p>
+        
+        <p><strong>Concepto clave:</strong> El poder que da el escritorio</p>
+        <p>En las empresas se relacionan cargos o roles no personas.</p>
+    </div>
+    
+    <div class="semana">SEMANA 5 - CLASE SINCRÓNICA</div>
+    
+    <div class="escuela">
+        <h2>5. ESCUELA DEL COMPORTAMIENTO</h2>
+        <p><strong>Época:</strong> Finales de los 40</p>
+        <p><strong>Representantes:</strong> Abraham Maslow, Douglas McGregor, Frederick Herzberg</p>
+        
+        <h3>Abraham Maslow: Pirámide de las necesidades</h3>
+        <p>Las personas no pueden ser motivables en el mismo momento y en la misma manera dependiendo de sus necesidades.</p>
+        
+        <h3>Douglas McGregor</h3>
+        <p>Las personas pueden ser clasificables como X o Y</p>
+        
+        <h3>Frederick Herzberg</h3>
+        <p>Habló sobre los factores motivacionales y los factores ambientales.</p>
+        <ul>
+            <li><strong>Factores motivacionales:</strong> Reconocimiento, trabajo estimulante, mayor responsabilidad, crecimiento y desarrollo personal</li>
+            <li><strong>Factores ambientales:</strong> Aquellos que en su ausencia desmotivan, pero en su presencia no motivan como las condiciones del trabajo, tipo de supervisión, políticas administrativas, salario</li>
+        </ul>
+        
+        <p><strong>El elemento de esta escuela y sus representantes es la ACTITUD</strong></p>
+    </div>
+    
+    <div class="escuela">
+        <h2>6. ESCUELA ESTRUCTURALISTA</h2>
+        <p><strong>Representante:</strong> Amitai Etzioni (sociólogo)</p>
+        
+        <p>Cuestionó de manera directa la estructura organizacional vista como una pirámide. Ya que en la vida real las empresas se deben ver como una esfera, ya que los departamentos tienen formas muy irregulares y fronteras difusas y no regulares y ciertas decisiones afectan al conjunto. Esta fue la escuela precursora de la escuela sistémica.</p>
+    </div>
+    
+    <div class="escuela">
+        <h2>7. ESCUELA SISTÉMICA</h2>
+        <p><strong>Época:</strong> Década de 1960</p>
+        <p><strong>Representante:</strong> Karl Ludwig Von Bertalanffy (Biólogo Austriaco)</p>
+        
+        <div class="definicion">
+            <p><strong>Sistema:</strong> Agregado de partes interrelacionadas que funcionan juntas para alcanzar un propósito común.</p>
+        </div>
+        
+        <p>La organización como sistema se entiende por qué los negocios todo el tiempo se dedican a generar transformaciones, transforman entradas en salidas.</p>
+        
+        <ul>
+            <li><strong>Entradas:</strong> Personas, materiales, tecnología, conocimiento, información</li>
+            <li><strong>Salidas:</strong> Bienes y/o servicios</li>
+        </ul>
+        
+        <p>Todo esto genera un feedback o realimentación del consumidor.</p>
+        <p>Tanto las entradas como las salidas vienen del ambiente y van al ambiente.</p>
+        
+        <div class="nota">
+            <p>Bertalanffy propone que las empresas se comportan como matrioschkas, sistemas que conforman otros sistemas.</p>
+            <p>Siguiendo esta línea, las organizaciones no operan por funciones sino por procesos.</p>
+        </div>
+        
+        <p>La teoría de sistemas da origen a un pensamiento que es la gestión por procesos.</p>
+        
+        <div class="definicion">
+            <p><strong>Proceso:</strong> Cualquier actividad o grupo de actividades que emplee un insumo, le agregue valor a este y suministre un producto o servicio a un cliente externo o interno.</p>
+        </div>
+    </div>
+    
+    <div class="semana">SEMANA 6 - CLASE AAA</div>
+    
+    <h2>3 Objetivos Básicos Empresariales</h2>
+    
+    <h3>Objetivos de crecimiento o desarrollo</h3>
+    
+    <p>El crecimiento está relacionado con la capacidad de expansión de la empresa y es medible. El desarrollo tiene que ver con 3 propiedades:</p>
+    
+    <h3>1. Largo Plazo</h3>
+    <p>El desarrollo se supone a largo plazo</p>
+    
+    <h3>2. Personas</h3>
+    <div class="contenido">
+        <p>Está relacionado con lo que generan las personas, que es: Tecnología, capacidad de crear nuevas soluciones (innovación). El conocimiento que generan las personas se puede categorizar en:</p>
+        <ul>
+            <li><strong>Know how?:</strong> Cómo se hacen las cosas. Práctica de las cosas. Labor del técnico</li>
+            <li><strong>Know why?:</strong> Por qué se hacen las cosas. Teoría de las cosas. Profesionales recién egresados</li>
+            <li><strong>Knowledge Management:</strong> Se refiere a la forma en como podemos combinar el know how con el know why</li>
+        </ul>
+    </div>
+    
+    <h3>3. Entorno o microambiente de las organizaciones</h3>
+    <div class="contenido">
+        <p>Si soy dueña de una empresa, esa empresa pasa a ser la variable dependiente, ya que esa variable se puede modificar, impactar, manejar, y en el caso del entorno pasa a ser la variable independiente ya que la persona no tiene inferencia en que este se transforme, cambie etc.</p>
+        
+        <p><strong>El entorno está compuesto por:</strong></p>
+        <ul>
+            <li>Clientes</li>
+            <li>Proveedores</li>
+            <li>Competidores</li>
+            <li>Reguladores</li>
+        </ul>
+    </div>
+    
+    <div class="semana">SEMANA 6 - CLASE SINCRÓNICA</div>
+    
+    <h2>Agregar Valor</h2>
+    
+    <div class="definicion">
+        <p><strong>Proceso:</strong> Cualquier actividad o grupo de actividades que emplee un insumo, le agregue valor a este y suministre un producto o servicio a un cliente externo o interno.</p>
+    </div>
+    
+    <h3>Concepto de "Agregar valor"</h3>
+    
+    <ol>
+        <li><strong>Originalmente se entendía como:</strong> DAR UN POCO MÁS - PAGAR UN POCO MENOS</li>
+        
+        <li><strong>Servicio al cliente:</strong> Fue muy fuerte, pero en la actualidad no se concibe como una forma de agregar valor, sino que hace parte del factor ambiental. El cliente en la actualidad es más informado, más interconectado y tiene más opciones</li>
+        
+        <li><strong>Disminución de tiempos:</strong> Los clientes valoran la empresa que les presta un servicio en menor tiempo ni que les den explicaciones que no les interesan
+            
+            <p><strong>Análisis de flujo de valor agregado:</strong> Evaluaciones que se hacen para identificar como se disminuyen los tiempos para poder prestar un servicio.</p>
+            
+            <p><strong>Características para que las acciones sumen tiempo:</strong></p>
+            <ol>
+                <li><strong>Si le importa al cliente:</strong> En un restaurante el cliente no critica el tiempo en el que les están preparando sus alimentos, pero si la atención está lenta porque algún mesero faltó, eso no le importa al cliente, ya que él espera que se solucione o que el sistema está lento o se cae</li>
+                <li><strong>Transformación física del objeto:</strong> Es fruto de una decisión (intangible): La demora es porque están ocupados trabajando e interviniendo</li>
+                <li><strong>Se hace bien desde el principio:</strong> No está generando reprocesos, se debe facultar a las personas (empowerment: facultamiento)</li>
+            </ol>
+        </li>
+        
+        <li><strong>Diseño de experiencia</strong></li>
+    </ol>
+    
+    <h3>Imaginación narrativa</h3>
+    <div class="contenido">
+        <p>Capacidad de ponerme en los zapatos del cliente, y debe cumplir con 3 características:</p>
+        
+        <ol>
+            <li><strong>La experiencia debe ser única:</strong>
+                <p>Para que esto sea posible se debe hacer una caracterización de clientes. Tener datos de los clientes, CRM.</p>
+            </li>
+            <li><strong>La experiencia debe ser inmersiva:</strong>
+                <p>Una experiencia que llama la atención y activa los sentidos</p>
+            </li>
+            <li><strong>La experiencia tiene que ser memorable:</strong>
+                <p>Cuando la evoque usted quiera volver una vez más, esto es lo que se le conoce como momentos de verdad, esos momentos decisivos que hacen que cliente se quede o no.</p>
+            </li>
+        </ol>
+    </div>
+    
+    <div class="semana">SEMANA 7 - CLASE AAA</div>
+    
+    <h2>Gestión del cambio</h2>
+    
+    <h3>7 factores que contribuyen a la resistencia al cambio</h3>
+    
+    <ol>
+        <li>Percepción de consecuencias negativas</li>
+        <li>Miedo a tener que trabajar más</li>
+        <li>Necesidad de romper hábitos</li>
+        <li>Falta de comunicación</li>
+        <li>No considerar que los esfuerzos deben ser globales</li>
+        <li>Sublevación del personal: Ellos consideran que se les está obligando a hacer más de lo que deben hacer</li>
+        <li>Experiencias negativas en cambios pasados</li>
+    </ol>
+    
+    <h3>¿Cómo lidiar con la resistencia al cambio?</h3>
+    
+    <ol>
+        <li><strong>Establecer una necesidad para cambiar:</strong> Cuando la necesidad existe, las personas actúan</li>
+        <li><strong>Crear una visión clara y convincente:</strong> Generar escenarios en los que las personas identifiquen la alineación entre su misión personal y la de la empresa</li>
+        <li>Buscar resultados positivos, producir éxitos tempranos</li>
+        <li>Comunicar, comunicar y comunicar</li>
+        <li><strong>Formar una coalición guía:</strong> Debe rodearse de un equipo de trabajo</li>
+        <li><strong>Hágalo complicado:</strong> Cuanto más grande sea la magnitud del cambio, más posibilidad tiene de ser exitoso</li>
+        <li><strong>La gente no se resiste a sus propias ideas:</strong> Las personas que participan en la concepción del cambio y cómo aplicar el cambio, hacen que el cambio se dé con mayor asertividad</li>
+    </ol>
+    
+    <div class="semana">SEMANA 7 - CLASE SINCRÓNICA</div>
+    
+    <div class="escuela">
+        <h2>8. ESCUELA CONTINGENCIAL O SITUACIONAL</h2>
+        <p><strong>Época:</strong> Décadas de 1960-1970</p>
+        <p><strong>Representante:</strong> Tom Burns (Sociólogo Industrial Inglés)</p>
+        
+        <p>Lo que importa es la contingencia de la situación o la emergencia, surge la estrategia emergente, que significa que surgió de un momento a otro. Qué tan apto está el negocio para enfrentar una situación que surge en el día a día.</p>
+    </div>
+    
+    <h2>Proceso Administrativo: PLANEAR</h2>
+    
+    <div class="definicion">
+        <p><strong>Planear:</strong> En este punto se establecen objetivos y se determina lo que la persona debe hacer para alcanzarlos.</p>
+        <p><strong>Función principal:</strong> Lidiar con la incertidumbre</p>
+    </div>
+    
+    <h3>Se encarga de:</h3>
+    <ul>
+        <li>Definir la misión</li>
+        <li>Definir la visión</li>
+        <li>Definir los planes para lograrlas</li>
+        <li>Programar actividades</li>
+    </ul>
+    
+    <p>Cuando se habla de la planeación, los planes se pueden clasificar en 3 grandes enfoques o formas: <strong>Complejidad, temporalidad, frecuencia de uso.</strong></p>
+    
+    <h3>Planes de acuerdo a su complejidad:</h3>
+    
+    <ol>
+        <li><strong>Futuro estable predecible y argumentable: Programa</strong>
+            <p>Un programa tiene como característica que tiene clara la meta y tiene claro el camino</p>
+        </li>
+        <li><strong>Futuro Inestable: Estrategia</strong>
+            <p>Tiene clara la meta pero fluctuante el camino</p>
+        </li>
+    </ol>
+    
+    <h3>Planes de acuerdo con la temporalidad</h3>
+    
+    <table class="tabla-comparacion">
+        <tr>
+            <th>Plazo</th>
+            <th>Duración</th>
+            <th>Tipo de Plan</th>
+        </tr>
+        <tr>
+            <td>Corto plazo</td>
+            <td>Menor o igual a 1 año</td>
+            <td>Plan operativo y plan de acción</td>
+        </tr>
+        <tr>
+            <td>Mediano plazo</td>
+            <td>Mayores de 1 y menor a 4 años</td>
+            <td>Plan de desarrollo</td>
+        </tr>
+        <tr>
+            <td>Largo plazo</td>
+            <td>Mayor de 4 años</td>
+            <td>Plan estratégico</td>
+        </tr>
+    </table>
+    
+    <div class="nota">
+        <p>Ejemplo: Cuantos planes de desarrollo de 3 años, se le diseñan al primer año de un plan estratégico de 9 años.</p>
+    </div>
+    
+    <h3>¿Cómo se configuran los planes de largo plazo? (estratégico o de desarrollo)</h3>
+    
+    <ul>
+        <li>Con una visión o Misión</li>
+        <li>Valores - Principios</li>
+        <li><strong>MEGA:</strong> Metas estratégicas grandes y ambiciosas y se expresan en términos de t y q, es decir en forma de tiempos y cantidades</li>
+        <li><strong>Líneas estratégicas:</strong> Agrupan Objetivos y metas</li>
+        <li>Estrategias</li>
+        <li>Actividades</li>
+        <li>Proyectos - presupuestos - programas</li>
+    </ul>
+    
+    <h3>Planes de acuerdo a su frecuencia de uso</h3>
+    
+    <ul>
+        <li><strong>Planes de única ejecución:</strong> Duran cuando ya se vuelven obsoletos</li>
+        <li><strong>Planes de permanente ejecución:</strong> Políticas, lineamientos o directrices que le permiten a las personas tener rangos para tomar decisiones</li>
+    </ul>
+    
+    <h2>PROSPECTIVA</h2>
+    
+    <div class="definicion">
+        <p>Herramienta que guía a las organizaciones a mirar hacia el futuro y a tomar decisiones estratégicas.</p>
+        <p>Es la identificación de un futuro probable y de un futuro deseable, diferente de la fatalidad, que depende únicamente del conocimiento que tenemos sobre las acciones que el ser humano desea emprender.</p>
+    </div>
+    
+    <h3>¿En qué se basa?</h3>
+    <ul>
+        <li>Analizar tendencias</li>
+        <li>Identificar los escenarios de futuro y como estas tendencias podrían impactar en la organización</li>
+        <li>Anticiparse a los cambios</li>
+    </ul>
+    
+    <h3>¿Cómo se hace la prospectiva?</h3>
+    
+    <p>La prospectiva no es impaciente, piensa en como construyo el futuro trayéndolo al presente. Se empieza de atrás hacia adelante para el escenario de futuro que quiero obtener.</p>
+    
+    <p><strong>Frente al futuro se puede tener 4 actitudes:</strong></p>
+    <ul>
+        <li>Pasividad</li>
+        <li>Reactividad</li>
+        <li>Preactividad</li>
+        <li><strong>Proactividad:</strong> La actitud del agente de cambio, hace que ocurra algo que en condiciones normales no ocurriría</li>
+    </ul>
+    
+    <h3>Preguntas prospectivas</h3>
+    <ol>
+        <li>¿Cuáles son los anhelos?</li>
+        <li>¿Cuáles son sus temores?</li>
+    </ol>
+    
+    <h3>Prospectiva en Colombia</h3>
+    <div class="nota">
+        <p>Videos de referencia:</p>
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=3NB5xG0ZeyE" target="_blank">https://www.youtube.com/watch?v=3NB5xG0ZeyE</a></li>
+            <li><a href="https://www.youtube.com/watch?v=_ftkEyexN88" target="_blank">https://www.youtube.com/watch?v=_ftkEyexN88</a></li>
+            <li><a href="https://www.youtube.com/watch?v=TS0SSqPS7So" target="_blank">https://www.youtube.com/watch?v=TS0SSqPS7So</a></li>
+            <li><a href="https://www.youtube.com/watch?v=n5jtLzRb5AM" target="_blank">https://www.youtube.com/watch?v=n5jtLzRb5AM</a></li>
+        </ul>
+    </div>
+    
+
+
+</body>
+
+</div>
+</html>

@@ -139,47 +139,32 @@ export const Projects = () => {
           </div>
 
 {/* Blog / Learning Project Card */}
-<a
-  href="/blog/administration-entrepreneurship"
-  className="block group"
+<div
+  onClick={() =>
+    window.open(
+      "/notas_administracion.html",
+      "_blank"
+    )
+  }
+  className="p-6 rounded-xl border border-white/10
+             bg-white/5 cursor-pointer
+             hover:-translate-y-1
+             hover:border-[#C084FC]/40
+             hover:shadow-[0_0_25px_rgba(192,132,252,0.2)]
+             transition-all"
 >
-  <div
-    className="p-6 rounded-xl border border-white/10
-               bg-white/5 backdrop-blur
-               hover:-translate-y-1
-               hover:border-[#C084FC]/40
-               hover:shadow-[0_0_25px_rgba(192,132,252,0.2)]
-               transition-all"
-  >
-    {/* Badge */}
-    <span
-      className="inline-block mb-3 px-3 py-1 text-xs font-medium
-                 rounded-full bg-[#C084FC]/10 text-[#E9D5FF]"
-    >
-      Learning Blog
-    </span>
+  <h3 className="text-2xl font-bold mb-2 text-white">
+              Administration & Entrepreneurship
+            </h3>
 
-    {/* Title */}
-    <h3 className="text-2xl font-bold mb-2 text-white">
-      Administration & Entrepreneurship
-    </h3>
+  <p className="text-gray-400 text-sm mb-4">
+    Personal knowledge base where I organize and systematize course notes on administration and entrepreneurship, connecting theory with practical and organizational thinking.
+  </p>
 
-    {/* Description */}
-    <p className="text-gray-400 text-sm mb-4">
-      A structured learning blog where I organize course notes and connect
-      administrative and entrepreneurial concepts with real-world and
-      product-oriented thinking.
-    </p>
-
-    {/* CTA */}
-    <span
-      className="text-[#C084FC] font-medium
-                 group-hover:text-[#E9D5FF]"
-    >
-      Read blog →
-    </span>
-  </div>
-</a>
+  <span className="text-[#C084FC] font-medium">
+    Open notes →
+  </span>
+</div>
 
           {/* ===================== */}
           {/* Placeholder Course 2 */}
