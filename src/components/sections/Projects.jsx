@@ -34,6 +34,29 @@ export const Projects = () => {
               and core IT services used in organizational environments.
             </p>
 
+            {/* Skills */}
+            <div className="flex flex-wrap gap-2 mb-6">
+            {[
+       "Ubuntu (Server & Desktop)",
+    "VirtualBox",
+    "Linux User & Permission Management",
+    "Basic Network Configuration",
+    "Service Configuration (DNS / Directory basics)",
+    ].map((skill, key) => (
+      <span
+        key={key}
+        className="bg-[#5315C0]/15 text-[#C084FC]
+                   py-1 px-3 rounded-full text-xs
+                   hover:bg-[#5315C0]/30
+                   hover:shadow-[0_0_12px_rgba(192,132,252,0.35)]
+                   transition"
+      >
+        {skill}
+      </span>
+    ))}
+  </div>
+            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Project 1 */}
        
@@ -161,9 +184,140 @@ export const Projects = () => {
     Personal knowledge base where I organize and systematize course notes on administration and entrepreneurship, connecting theory with practical and organizational thinking.
   </p>
 
+   {/* Skills */}
+            <div className="flex flex-wrap gap-2 mb-6">
+            {[
+          "Administrative Process (Planning, Organizing, Directing, Controlling)",
+    "Strategic Thinking & Goal Definition",
+    "Process-Oriented Management",
+    "Basic Financial Concepts (Profitability, Margin, Returns)",
+    "Customer-Oriented Thinking",
+    ].map((skill, key) => (
+      <span
+        key={key}
+        className="bg-[#5315C0]/15 text-[#C084FC]
+                   py-1 px-3 rounded-full text-xs
+                   hover:bg-[#5315C0]/30
+                   hover:shadow-[0_0_12px_rgba(192,132,252,0.35)]
+                   transition"
+      >
+        {skill}
+      </span>
+    ))}
+  </div>
+
   <span className="text-[#C084FC] font-medium">
     Open notes →
   </span>
+</div>
+
+
+{/* ===================== */}
+{/* Software Engineering & Data */}
+{/* ===================== */}
+<div
+  className="p-8 rounded-xl border border-white/10
+             bg-white/5 backdrop-blur
+             hover:-translate-y-1 transition-all"
+>
+  <h3 className="text-2xl font-bold mb-2 text-white">
+    Introduction to Software Engineering & Data
+  </h3>
+
+  <p className="text-gray-400 mb-4">
+    Academic projects focused on web fundamentals, version control,
+    collaborative development, and Agile-based organization.
+  </p>
+
+  {/* Skills */}
+  <div className="flex flex-wrap gap-2 mb-6">
+    {[
+      "HTML5",
+      "CSS3",
+      "JavaScript (Vanilla)",
+      "Git & GitHub",
+      "Git Flow",
+      "SCRUM Basics",
+      "Agile Collaboration",
+      "Technical Documentation",
+      "GitHub Pages",
+    ].map((skill, key) => (
+      <span
+        key={key}
+        className="bg-[#5315C0]/15 text-[#C084FC]
+                   py-1 px-3 rounded-full text-xs
+                   hover:bg-[#5315C0]/30
+                   hover:shadow-[0_0_12px_rgba(192,132,252,0.35)]
+                   transition"
+      >
+        {skill}
+      </span>
+    ))}
+  </div>
+
+  {/* Projects */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+    {/* Project 1 */}
+    <div
+      onClick={() =>
+        window.open("https://yennivanessa97.github.io/Personal-Website/", "_blank")
+      }
+      className="p-6 rounded-xl border border-white/10
+                 bg-white/5 cursor-pointer
+                 hover:-translate-y-1
+                 hover:border-[#C084FC]/40
+                 hover:shadow-[0_0_25px_rgba(192,132,252,0.2)]
+                 transition-all"
+    >
+      <h4 className="text-lg font-semibold text-white mb-2">
+        🌐 Personal Website & Technical Blog
+      </h4>
+
+      <p className="text-gray-400 text-sm mb-4">
+        Personal website built with HTML, CSS, and vanilla JavaScript.
+        Includes blog content on early computer history and a Git & GitHub
+        tutorial with Git Flow fundamentals.
+      </p>
+
+      <span className="text-[#C084FC] font-medium">
+        Open project →
+      </span>
+    </div>
+
+    {/* Project 2 */}
+    <div
+      onClick={() =>
+        window.open(
+          "https://yennivanessa97.github.io/Repositorio-Colaborativo/",
+          "_blank"
+        )
+      }
+      className="p-6 rounded-xl border border-white/10
+                 bg-white/5 cursor-pointer
+                 hover:-translate-y-1
+                 hover:border-[#C084FC]/40
+                 hover:shadow-[0_0_25px_rgba(192,132,252,0.2)]
+                 transition-all"
+    >
+      <h4 className="text-lg font-semibold text-white mb-2">
+        👥 Collaborative Academic Blog
+      </h4>
+
+      <p className="text-gray-400 text-sm mb-4">
+        Team-based blog developed using Git Flow and SCRUM.
+        Tasks were managed in Trello, collaboration via GitHub,
+        and deployment through GitHub Pages.
+      </p>
+
+      <span className="text-[#C084FC] font-medium">
+        View project →
+      </span>
+    </div>
+
+  </div>
+
+  
 </div>
 
           {/* ===================== */}

@@ -24,6 +24,18 @@ export const About = () => {
     "Customer-Oriented Thinking",
   ];
 
+  const softwareSkills = [
+    "HTML5",
+    "CSS3",
+    "JavaScript (Vanilla)",
+    "Git & GitHub",
+    "Git Flow",
+    "SCRUM Basics",
+    "Agile Collaboration",
+    "Technical Documentation",
+    "GitHub Pages",
+  ];
+
   return (
     <section
       id="about"
@@ -74,6 +86,14 @@ export const About = () => {
                 openSection={openSection}
                 toggleSection={toggleSection}
                 skills={administrationSkills}
+              />
+              {/* Software */}
+              <SkillSection
+                title="Software & Web Development"      
+                sectionKey="software"
+                openSection={openSection}
+                toggleSection={toggleSection}
+                skills={softwareSkills}
               />
             </div>
           </div>
