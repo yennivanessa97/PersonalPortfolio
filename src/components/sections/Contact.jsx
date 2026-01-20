@@ -1,3 +1,6 @@
+import { Linkedin, Github } from "lucide-react";
+
+
 export const Contact = () => {
   return (
     <section
@@ -72,6 +75,53 @@ export const Contact = () => {
               Send Message
             </button>
           </form>
+
+{/* Divider */}
+<div className="flex items-center my-6">
+  <div className="flex-grow h-px bg-white/10" />
+  <span className="px-3 text-sm text-gray-400">or</span>
+  <div className="flex-grow h-px bg-white/10" />
+</div>
+
+{/* Social links */}
+<div className="flex justify-center gap-4">
+  {/* LinkedIn */}
+  <a
+    href="https://www.linkedin.com/in/yenni-vanessa-delgado-velasco/?locale=en_US"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 px-4 py-2 rounded-lg
+               border border-white/10 bg-white/5
+               text-gray-300 text-sm
+               transition-all
+               hover:text-white
+               hover:border-[#C084FC]/40
+               hover:shadow-[0_0_15px_rgba(192,132,252,0.25)]
+               hover:-translate-y-0.5"
+  >
+    <Linkedin size={18} />
+    LinkedIn
+  </a>
+
+  {/* GitHub */}
+  <a
+    href="https://github.com/yennivanessa97"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 px-4 py-2 rounded-lg
+               border border-white/10 bg-white/5
+               text-gray-300 text-sm
+               transition-all
+               hover:text-white
+               hover:border-[#C084FC]/40
+               hover:shadow-[0_0_15px_rgba(192,132,252,0.25)]
+               hover:-translate-y-0.5"
+  >
+    <Github size={18} />
+    GitHub
+  </a>
+</div>
+
         </div>
       </div>
     </section>

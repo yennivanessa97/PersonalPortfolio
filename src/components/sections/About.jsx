@@ -100,41 +100,178 @@ export const About = () => {
 
           {/* Bottom cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-            {/* Education */}
-            <div
-              className="p-6 rounded-xl border border-white/10
-                         bg-white/5 backdrop-blur
-                         hover:-translate-y-1 transition-all"
-            >
-              <h3 className="text-xl font-bold mb-4 text-white">
-                🎓 Education
-              </h3>
-              <ul className="list-disc list-inside text-gray-300 space-y-2">
-                <li>
-                  <strong>Software & Data Engineering</strong> – University
-                </li>
-                <li>
-                  Relevant coursework in programming, data analysis, and systems
-                  design.
-                </li>
-              </ul>
-            </div>
+           {/* Education */}
+<div
+  className="p-6 rounded-xl border border-white/10
+             bg-white/5 backdrop-blur
+             hover:-translate-y-1 transition-all"
+>
+  <h3 className="text-xl font-bold mb-4 text-white">
+    🎓 Education
+  </h3>
 
-            {/* Experience */}
-            <div
-              className="p-6 rounded-xl border border-white/10
-                         bg-white/5 backdrop-blur
-                         hover:-translate-y-1 transition-all"
-            >
-              <h3 className="text-xl font-bold mb-4 text-white">
-                💼 Experience
-              </h3>
-              <p className="text-gray-300">
-                Academic and personal projects focused on systems, web
-                development, and process-oriented thinking in structured
-                environments.
-              </p>
-            </div>
+  <ul className="space-y-4 text-gray-300 text-sm">
+
+    <li>
+      <strong className="text-white">
+        Software Engineering & Data
+      </strong>
+      <br />
+      Digital University Institution of Antioquia
+      <br />
+      <span className="text-gray-400">
+        Feb 2024 – Present
+      </span>
+    </li>
+
+    <li>
+      <strong className="text-white">
+        Data Analysis & Visualization Bootcamp
+      </strong>
+      <br />
+      Ministry of IT and Communications, Colombia
+      <br />
+      <span className="text-gray-400">
+        Mar 2024 – Aug 2024
+      </span>
+    </li>
+
+    <li>
+      <strong className="text-white">
+        Fullstack Web Development
+      </strong>
+      <br />
+      Simplon.co Grand Ouest
+      <br />
+      <span className="text-gray-400">
+        Oct 2022 – Mar 2023
+      </span>
+    </li>
+
+    <li>
+      <strong className="text-white">
+        Web Development (Programming Focus)
+      </strong>
+      <br />
+      Technological University of Pereira
+      <br />
+      <span className="text-gray-400">
+        Apr 2022 – Dec 2022
+      </span>
+    </li>
+
+    <li>
+      <strong className="text-white">
+        B.Sc. in Psychology
+      </strong>
+      <br />
+      Catholic University of Colombia
+      <br />
+      <span className="text-gray-400">
+        Aug 2015 – Jun 2020
+      </span>
+    </li>
+
+  </ul>
+</div>
+
+
+{/* Experience */}
+<div
+  className="p-6 rounded-xl border border-white/10
+             bg-white/5 backdrop-blur
+             hover:-translate-y-1 transition-all"
+>
+  <h3 className="text-xl font-bold mb-4 text-white">
+    💼 Experience
+  </h3>
+
+  <ul className="space-y-5 text-gray-300 text-sm">
+
+    <li>
+      <strong className="text-white">
+        Java Backend Developer (Intern)
+      </strong>
+      <br />
+      Accenture Colombia · Remote
+      <br />
+      <span className="text-gray-400">
+        Jul 2023 – Dec 2023
+      </span>
+      <p className="mt-1">
+        Collaborated on backend solutions for banking applications using Java,
+        following coding standards, secure practices, and unit testing with
+        JUnit and Mockito.
+      </p>
+    </li>
+
+    <li>
+      <strong className="text-white">
+        Python Developer
+      </strong>
+      <br />
+      Colombian TI Software S.A.S · Remote
+      <br />
+      <span className="text-gray-400">
+        Aug 2022 – Nov 2022
+      </span>
+      <p className="mt-1">
+        Developed full-stack web applications using Python, Flask, and Django,
+        working with SQL databases and RESTful APIs.
+      </p>
+    </li>
+
+    <li>
+      <strong className="text-white">
+        Technical Support – Apple Mobile
+      </strong>
+      <br />
+      Teleperformance · On-site
+      <br />
+      <span className="text-gray-400">
+        Feb 2022 – Jun 2022
+      </span>
+      <p className="mt-1">
+        Provided technical support for iOS devices, troubleshooting hardware
+        and software issues, account configuration, and technical documentation.
+      </p>
+    </li>
+
+    <li>
+      <strong className="text-white">
+        Research Assistant
+      </strong>
+      <br />
+      Catholic University of Colombia · On-site
+      <br />
+      <span className="text-gray-400">
+        Feb 2017 – Nov 2018
+      </span>
+      <p className="mt-1">
+        Coordinated a social research pilot study, managed participant databases,
+        collected data, and produced analytical and research reports.
+      </p>
+    </li>
+
+    <li>
+      <strong className="text-white">
+        Psychologist
+      </strong>
+      <br />
+      ESE San Juan de Dios Health Center · On-site
+      <br />
+      <span className="text-gray-400">
+        Feb 2020 – May 2020
+      </span>
+      <p className="mt-1">
+        Conducted individual and group mental health interventions and developed
+        organizational diagnostics and intervention plans.
+      </p>
+    </li>
+
+  </ul>
+</div>
+
           </div>
         </div>
       </RevealOnScroll>
